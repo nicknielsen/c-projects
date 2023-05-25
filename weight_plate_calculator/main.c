@@ -57,10 +57,15 @@ int main()
             printf("5\n");
             half_plate_weight -= 5;
         }
-        else if (half_plate_weight < 5)
+        else if (half_plate_weight < 5 && half_plate_weight >= 2.5)
         {
             printf("2.5\n");
             half_plate_weight -= 2.5;
+        }
+        else if (half_plate_weight < 2.5)
+        {
+            printf("1.25\n");
+            half_plate_weight -= 1.25;
         }
     }
 
